@@ -8,9 +8,9 @@ const CategoriesSchema = new mongoose.Schema(
       type: String, default: '', required: REQUIRED, unique: true,
     },
     icon: { type: String, default: '', required: REQUIRED },
-    games: [{
+    products: [{
       type: mongoose.Schema.Types.ObjectId,
-      ref: 'Game',
+      ref: 'Product',
     }],
   }, {
     timestamps: {

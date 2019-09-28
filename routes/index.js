@@ -1,12 +1,10 @@
 const user = require('./user');
 const category = require('./category');
-const game = require('./game');
-const tournament = require('./tournament');
+const product = require('./product');
 
 
 module.exports = (router) => {
   user(router);
   category(router);
-  game(router);
-  tournament(router);
+  product(router);
 };

@@ -92,9 +92,6 @@ module.exports = {
     const props = [
       'firstName',
       'lastName',
-      'telephone',
-      'gender',
-      'nationality',
       'username',
       'description',
     ];
