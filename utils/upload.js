@@ -2,7 +2,7 @@ const multer = require('multer');
 const multerS3 = require('multer-s3');
 const AWS = require('aws-sdk');
 
-AWS.config.loadFromPath('/Users/stanjhae/Desktop/sparta-backend/utils/aws.json');
+AWS.config.loadFromPath('/Users/stanjhae/Desktop/caustic-backend/utils/aws.json');
 const s3 = new AWS.S3();
 
 exports.image = () => multer({

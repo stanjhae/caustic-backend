@@ -45,6 +45,7 @@ module.exports = {
       user = await user.save();
       respond(http.CREATED, user);
     } catch (err) {
+      console.log(err)
       if (err.code === 11000) return respondErr(http.CONFLICT, 'Username already in use');
       respondErr(http.SERVER_ERROR, err.message);
     }

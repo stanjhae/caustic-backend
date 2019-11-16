@@ -37,4 +37,4 @@ ProductSchema.set('toJSON', {
   virtuals: true,
 });
 
-module.exports = mongoose.model('Game', ProductSchema);
+module.exports = mongoose.model('Product', ProductSchema);

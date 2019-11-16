@@ -5,7 +5,7 @@ const REQUIRED = '{PATH} is required';
 
 const UserSchema = new mongoose.Schema(
   {
-    username: { type: String, unique: true, required: REQUIRED },
+    username: { type: String, unique: true },
     hash: { type: String },
     firstName: { type: String },
     lastName: { type: String },

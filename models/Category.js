@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const REQUIRED = '{PATH} is required';
 
-const CategoriesSchema = new mongoose.Schema(
+const CategorySchema = new mongoose.Schema(
   {
     name: {
       type: String, default: '', required: REQUIRED, unique: true,
@@ -23,13 +23,13 @@ const CategoriesSchema = new mongoose.Schema(
 
 // Duplicate the ID field.
 // eslint-disable-next-line func-names
-CategoriesSchema.virtual('id').get(function () {
+CategorySchema.virtual('id').get(function () {
   return this._id.toHexString();
 });
 
 // Ensure virtual fields are serialised.
-CategoriesSchema.set('toJSON', {
+CategorySchema.set('toJSON', {
   virtuals: true,
 });
 
-module.exports = mongoose.model('Category', CategoriesSchema);
+module.exports = mongoose.model('Category', CategorySchema);
