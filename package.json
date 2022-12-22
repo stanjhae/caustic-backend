@@ -25,7 +25,7 @@
     "gridfs-stream": "latest",
     "history": "latest",
     "iana-tz-data": "^2018.5.0",
-    "jsonwebtoken": "^8.3.0",
+    "jsonwebtoken": "^9.0.0",
     "mongoose": "^5.3.8",
     "morgan": "^1.9.1",
     "multer": "^1.4.1",
